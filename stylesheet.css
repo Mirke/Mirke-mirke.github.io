@@ -1,0 +1,20 @@
+body {
+    background-color: dimgrey;
+    color: cornsilk;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+
+}

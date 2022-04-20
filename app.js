@@ -1,5 +1,7 @@
 "use strict";
 
+
+// Cities
 let cityNames = ["Vancouver", "Calgary", "Winnipeg", "Sault St. Marie",
  "Montreal", "Seattle", "Boston", "Helena", "Duluth", "Toronto",
   "Portland", "New York", "Pittsburgh", "Chicago", "Omaha",
@@ -9,6 +11,7 @@ let cityNames = ["Vancouver", "Calgary", "Winnipeg", "Sault St. Marie",
       "Santa Fe", "Las Vegas", "Los Angeles", "Phoenix", "El Paso",
        "Dallas", "Houston", "New Orleans", "Miami"]
 
+// Helper functions
 function randomCityName(){
     return cityNames[parseInt(Math.random() * cityNames.length)]
 }
@@ -40,4 +43,7 @@ function pickFiveCityPairs(){
     return s
 }
 
-console.log(pickFiveCityPairs())
+// Event listener
+
+document.getElementById("fiveCities").addEventListener("click", () => {alert(pickFiveCityPairs())})
+document.getElementById("threeCities").addEventListener("click", () => {alert(pickThreeCityPairs())})
